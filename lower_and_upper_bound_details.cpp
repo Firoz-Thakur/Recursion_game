@@ -32,10 +32,12 @@ int main() {
     auto it=lower_bound(ar,ar+n,key);   //inbuilt fun
     cout<<it-ar<<endl;
     auto it2=upper_bound(ar,ar+n,key);
-    cout<<(it2-ar)-1               //upper bound gives us upper bound of the highest indexed element so we need to substract one from that
-    return 0;
+    cout<<(it2-ar)-1<<endl;               //upper bound gives us upper bound of the highest indexed element so we need to substract one from that
+    cout<<"occurance of element is "<<it2-it;
+  return 0;
 }
-
+//
 7 baba
 2
 7
+occurance of element is 6

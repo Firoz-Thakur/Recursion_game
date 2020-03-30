@@ -1,5 +1,23 @@
 //power of number
+complexity :O(b)
+#include <iostream>
+using namespace std;
 
+int slowpow(int a,int b)
+{
+  if(b==0)
+   return 1;
+  return a*slowpow(a,b-1);
+}
+
+int main() {
+	// your code goes here
+    int a=2,b=3;
+    cout<<slowpow(a,b);
+	return 0;
+}
+complexity (log b)
+very good algo:
 #include <iostream>
 using namespace std;
 
